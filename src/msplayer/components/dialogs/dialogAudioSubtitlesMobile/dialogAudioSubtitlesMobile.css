@@ -6,7 +6,6 @@
   left: 0;
   width: 100%;
   height: 50%;
-  padding: 20px;
   background-color: #000;
   z-index: 11040; /* Adecuar */
   display: flex;
@@ -25,6 +24,7 @@
 .menu_audio {
   z-index: 11020;
   width: 150px;
+  padding-left: 12px;
 }
 
 .container_menu {
@@ -60,6 +60,7 @@
     /*padding-left: 25px;*/
     /*padding-top: 25px;*/
     padding: 25px 15px;
+    margin-bottom: 18px;
   }
 }
 :global .xx-small {
@@ -385,7 +386,6 @@
   }
 
 }
-  
 :global .x-small {
   :local .container {
     height: 100%;
@@ -393,7 +393,8 @@
   }
 
   :local .container_menu {
-    margin-top: 110px;
+    margin-top: 20px;
+    margin-bottom: 45px;
   }
 
   :local .btcancelar {

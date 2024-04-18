@@ -1139,13 +1139,15 @@ class VideoPlayer extends Component {
       isFullWindow,
       isPlaying,
       theme,
+      playerSize,
       adPauseInfo
     } = this.state
 
+    const isPlayerHeightTaller = playerSize.height > playerSize.width
     const isAdPauseVisible = this.isAdPauseVisible(adPauseInfo)
 
     if(genre === CONTENT && !isDialogShareVisible && (isControlBarVisible || !isPlaying) && !isAdPauseVisible) {
-      if(isExitFullWindowEnabled && isFullWindow && !isFullScreen) {
+      if(isExitFullWindowEnabled && isPlayerHeightTaller && isFullWindow && !isFullScreen) {
         return (
           <InsetBt
             description='playerExitFullWindowButton'
@@ -1155,7 +1157,7 @@ class VideoPlayer extends Component {
             type={ 'close' }
           />
         )
-      } else if(theme === MOBILE && isFullScreen) {
+      } else if(theme === MOBILE && isFullScreen && isPlayerHeightTaller) {
         return (
           <InsetBt
             description='playerExitFullScreenButton'

@@ -119,8 +119,8 @@ export const getEvar49 = (isNextVideo, isNextVideoPlayback, carouselType, topVid
   if (carouselType) return carouselType
   if (isNextVideo && isNextVideoPlayback) return 'Siguiente capitulo'
   if (isNextVideo) return 'Autoplay'
-  if (topVideo) return 'Top videos contenedor'
-  // Añadir comprobaciones del Top Videos
+  if (topVideo?.location && topVideo.location === 'container') return 'Top videos contenedor'
+  if (topVideo?.location && topVideo.location === 'preplayer') return 'Top videos pastilla preplayer'
   return 'Otros'
 }
 
@@ -133,7 +133,8 @@ export const getEvar102 = (eVar49Value, isButtonVisible) => {
 }
 
 export const getEvar121 = (type, index, isNextVideo, isNextVideoPlayback,topVideo) => {
-  if (topVideo && !isNextVideo && !isNextVideoPlayback) return `Top videos contenedor|${topVideo}`
+  if (topVideo?.location && topVideo?.position
+    && !isNextVideo && !isNextVideoPlayback) return `${topVideo.location === 'container' ? 'Top videos contenedor' : 'Top videos pastilla preplayer'}|${topVideo.position}`
   if (!type) return 'No aplica'
   return`${type}|${index + 1}`
 }

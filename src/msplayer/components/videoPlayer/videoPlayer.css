@@ -21,12 +21,6 @@
   }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  .container {
-    height: calc(100% - 96px);
-  }
-}
-
 .isPodcast{
     width: 100%;
     position: relative;
@@ -35,6 +29,7 @@
     background-size: 'contain';
     background-repeat: 'no-repeat';
 }
+
 .stylesAdVideo {
   width: 70%;
   height: 70%;

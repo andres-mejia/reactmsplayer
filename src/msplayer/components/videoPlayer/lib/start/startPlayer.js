@@ -66,9 +66,9 @@ export function startPlayer(player) {
     }
 
     const totalVideosWatched = sessionStorage.getItem('totalVideosWatched')
-    if (!totalVideosWatched && !isLive) {
+    if (!totalVideosWatched && !isLive && mode !== PREVIEW) {
       sessionStorage.setItem('totalVideosWatched', '1')
-    } else if (!isLive && !isNextVideo) {
+    } else if (!isLive && !isNextVideo && mode !== PREVIEW) {
       sessionStorage.setItem('totalVideosWatched', (+totalVideosWatched + 1).toString())
     }
 

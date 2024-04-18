@@ -10,7 +10,7 @@ import {
 import VideoPlayer from './components/videoPlayer'
 import styles from './msplayer.css'
 
-const VERSION = '2.2.1'
+const VERSION = '2.3.0'
 
 const {
   MITELE,
