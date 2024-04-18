@@ -1,0 +1,283 @@
+@import "svg_inline/list";
+
+.container {
+  position: absolute;
+  display: flex;
+  padding: 10px 18px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  white-space: nowrap;
+  background: none;
+  border: solid 0.5px #ffffff;
+  border-radius: 5px !important;
+  outline: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  right: 35px;
+  top: 22px;
+  z-index: 11035;
+
+  &:hover {
+    border-color: #ffffff;
+  }
+}
+
+.icon_ocultar {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-top: 2px;
+  background-image: svg-inline(player_icon_chat_desactivar);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+
+.icon_mostrar {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-top: 2px;
+  background-image: svg-inline(player_icon_chat_activar);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+
+.text {
+  display: block;
+  color: #ffffff;
+}
+
+:global .large {
+  :local .container {
+    font-size: 20px;
+    right: 25px;
+
+    &.mobile {
+      padding: 0;
+      border: 0;
+      top: 26px;
+      right: 63px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.mobile_close {
+      padding: 0;
+      border: 0;
+      top: 22px;
+      right: 13px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.close {
+      right: 75px;
+    }
+  }
+
+  :local .icon_ocultar,
+  :local .icon_mostrar {
+    width: 20px;
+    height: 20px;
+
+    &.icono_mobile {
+      width: 36px;
+      height: 34px;
+    }
+        
+  }
+}
+
+
+:global .medium {
+  :local .container {
+    font-size: 20px;
+    right: 25px;
+
+    &.mobile {
+      padding: 0;
+      border: 0;
+      top: 30px;
+      right: 61px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.mobile_close {
+      padding: 0;
+      border: 0;
+      top: 22px;
+      right: 13px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+    
+    &.close {
+      right: 75px;
+    }
+  }
+
+  :local .icon_ocultar,
+  :local .icon_mostrar {
+    width: 20px;
+    height: 20px;
+
+    &.icono_mobile {
+      width: 36px;
+      height: 34px;
+    }
+        
+  }
+}
+
+:global .small {
+  :local .container {
+    right: 25px;
+    top: 20px;
+
+    &.mobile {
+      padding: 0;
+      border: 0;
+      top: 14px;
+      right: 45px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.mobile_close {
+      padding: 0;
+      border: 0;
+      top: 9px;
+      right: 8px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.close {
+      right: 60px;
+      top: 15px;
+    }
+  }
+
+  :local .icon_ocultar,
+  :local .icon_mostrar {
+    width: 24px;
+    height: 22px;
+    margin: 0;
+  }
+}
+
+:global .x-small {
+  :local .container {
+    right: 25px;
+    font-size: 16px;
+
+    &.mobile {
+      padding: 0;
+      border: 0;
+      top: 12px;
+      right: 35px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.mobile_close {
+      padding: 0;
+      border: 0;
+      top: 8px;
+      right: 8px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.close {
+      right: 40px;
+      top: 2px;
+      height: 36px;
+      padding: 7px 12px;
+    }
+  }
+
+  :local .icon_ocultar,
+  :local .icon_mostrar {
+    width: 24px;
+    height: 22px;
+    margin: 0;
+  }
+
+}
+
+:global .xx-small {
+  :local .container {
+    right: 18px;
+    font-size: 14px;
+
+    &.mobile {
+      padding: 0;
+      border: 0;
+      top: 13px;
+      right: 38px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.mobile_close {
+      padding: 0;
+      border: 0;
+      top: 8px;
+      right: 8px;
+      @media (hover:none) {
+        &:hover {
+          opacity: 1!important;
+        }
+      }
+    }
+
+    &.close {
+      right: 34px;
+      top: 2px;
+      height: 28px;
+      padding: 4px 8px;
+    }
+  }
+
+  :local .icon_ocultar,
+  :local .icon_mostrar {
+    width: 21px;
+    height: 18px;
+    margin: 0;
+  }
+
+}

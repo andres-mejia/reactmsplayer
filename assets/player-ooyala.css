@@ -1,0 +1,23 @@
+.oo-player-container [class^="oo-icon-"], .oo-player-container [class*=" oo-icon-"]{
+  font-family: 'msplayer-icons' !important;
+}
+.oo-player-container .oo-control-bar .oo-control-bar-items-wrapper .oo-control-bar-item:focus .oo-icon {
+  box-shadow: none !important;
+}
+[data-is-live="true"] .oo-control-bar-duration,[data-is-live="true"] .oo-live {
+  display:none!important
+}
+[data-is-live="true"] .oo-scrubber-bar-padding {
+  display: none !important;
+}
+
+@font-face {
+    font-family: 'msplayer-icons';
+    src:    url('fonts/msplayer-icons.eot?4sjs3b');
+    src:    url('fonts/msplayer-icons.eot?4sjs3b#iefix') format('embedded-opentype'),
+        url('fonts/msplayer-icons.ttf?4sjs3b') format('truetype'),
+        url('fonts/msplayer-icons.woff?4sjs3b') format('woff'),
+        url('fonts/msplayer-icons.svg?4sjs3b#msplayer-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

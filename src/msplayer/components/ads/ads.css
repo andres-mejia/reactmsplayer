@@ -1,0 +1,105 @@
+@import "svg_inline/list";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.adsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*width: 100%;
+  height: 100%;*/
+  cursor: pointer;
+  z-index: 11008;
+
+  &.isNonLinear {
+    z-index: 11022;
+  }
+}
+
+.customClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  background-size: 90px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 11007;
+  opacity: 0;
+}
+
+.playIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: svg-inline(player_icon_play_inset);
+  background-size: 90px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 11010;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.adLive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px 4px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  z-index: 11009;
+}
+
+:global .large,
+:global .medium {
+  :local .playIcon {
+    background-size: 90px;
+  }
+}
+
+:global .small {
+  :local .playIcon {
+    background-size: 60px;
+  }
+  :local .adLive {
+    font-size: 12px;
+  }
+}
+
+:global .x-small {
+  :local .playIcon {
+    background-size: 50px;
+  }
+  :local .adLive {
+    font-size: 8px;
+  }
+}
+
+:global .xx-small {
+  :local .playIcon {
+    background-size: 35px;
+  }
+  :local .adLive {
+    font-size: 7px;
+  }
+}
+
+:global .no-cursor {
+  :local .playIcon {
+    cursor: none !important;
+  }
+}

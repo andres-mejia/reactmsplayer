@@ -1,0 +1,155 @@
+@import "../../../../styles/svg_inline/list.css";
+
+.bt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 88px;
+  height: 88px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_close);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+
+  &.arrow {
+    width: 94px;
+    background-size: 28px;
+    background-image: svg-inline(player_icon_back_arrow);
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &.TL {
+    top: 0;
+    left: 0;
+  }
+
+  &.TC {
+    top: 0;
+    left: 50%;
+    right: 50%;
+  }
+
+  &.TR {
+    top: 9px;
+    right: 9px;
+
+    @media ($(ms_pablet)) {
+      top: 3px;
+      right: 2px;
+    }
+  }
+
+  &.CL {
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+  }
+
+  &.CC {
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+  }
+
+  &.CR {
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+  }
+
+  &.BL {
+    bottom: 0;
+    left: 0;
+  }
+
+  &.BC {
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+  }
+
+  &.BR {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.bt:hover {
+  &.touchDevice {
+    opacity: 1;
+  }
+}
+
+:global .xx-small {
+  :local .bt {
+    width: 32px;
+    height: 26px;
+    background-size: 12px;
+
+    &.arrow {
+      width: 35px;
+      background-size: 12px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .bt  {
+    width: 26px;
+    height: 26px;
+    background-size: 15px;
+
+    &.arrow {
+      width: 38px;
+      background-size: 15px;
+    }
+  }
+}
+
+:global .small {
+  :local .bt {
+    width: 62px;
+    height: 70px;
+    background-size: 22px;
+    &.arrow {
+      width: 67px;
+      background-size: 22px;
+    }
+  }
+
+  &.player-mobile {
+    :local .bt {
+      width: 48px;
+      height: 42px;
+      background-size: 15px;
+      &.arrow {
+        width: 50px;
+        background-size: 16px;
+      }
+    }
+  }
+
+}
+
+:global .large,
+:global .medium {
+  :local .bt {
+    width: 88px;
+    height: 88px;
+    background-size: 28px;
+
+    &.arrow {
+      width: 94px;
+      background-size: 28px;
+    }
+  }
+}

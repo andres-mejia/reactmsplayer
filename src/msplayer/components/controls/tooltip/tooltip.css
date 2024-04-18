@@ -1,0 +1,104 @@
+.container {
+  position: absolute;
+  right: 28px;
+  bottom: 85px;
+  width: 195px;
+  height: 89px;
+  background: black;
+  color: white;
+  padding: 15px 18px 13px 19px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px;
+  z-index: 11022;
+
+  &.multichannel {
+    bottom: 166px;
+  }
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  right: 14px;
+  border-top: 14px solid black;
+  border-top-color: black;
+  border-left: 17px solid transparent;
+  border-right: 0px solid transparent;
+}
+
+.info {
+  width: 157px;
+  height: 34px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  margin: 0 1px 7px 0;
+}
+
+.link {
+  width: 154px;
+  height: 20px;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  margin: 0 0 0 4px;
+  color: white;
+  cursor: pointer;
+}
+
+:global .medium {
+  :local .container {
+    bottom: 70px;
+
+    &.multichannel {
+      right: 28px;
+      bottom: 155px;
+    }
+  }
+}
+
+:global .small {
+  :local .container {
+    right: 18px;
+    bottom: 65px;
+
+    &.multichannel {
+      right: 18px;
+      bottom: 134px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .container {
+    right: 5px;
+    bottom: 100px;
+
+    &.multichannel {
+      right: 5px;
+      bottom: 100px;
+    }
+  }
+}
+
+:global .xx-small {
+  :local .container {
+    right: 2px;
+    bottom: 42px;
+
+    &.multichannel {
+      right: 2px;
+      bottom: 72px;
+    }
+  }
+}

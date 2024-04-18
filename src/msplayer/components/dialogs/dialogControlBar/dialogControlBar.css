@@ -1,0 +1,155 @@
+@import "svg_inline/list";
+
+.container {
+}
+
+.bt {
+  width: 34px;
+  height: 28px;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+}
+
+.seeAgainBt {
+  width: 23px;
+  background-image: svg-inline(player_icon_see_again);
+}
+
+.exitFullScreenBt {
+  background-image: svg-inline(player_icon_fullscreen_out);
+}
+
+.enterFullScreenBt {
+  background-image: svg-inline(player_icon_fullscreen_in);
+  /*background-size: cover;*/
+}
+
+.openShareDialogBt {
+  background-image: svg-inline(player_icon_share);
+
+  &._ios {
+    background-image: svg-inline(player_icon_share_ios);
+  }
+}
+
+.btsGroup {
+  position: absolute;
+  margin: 30px;
+  bottom: 0;
+
+  button {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &.left {
+    left: 0;
+    text-align: left;
+
+    button {
+      margin-right: 20px;
+    }
+  }
+
+  &.right {
+    right: 0;
+    text-align: right;
+
+    button {
+      margin-left: 20px;
+    }
+  }
+}
+
+:global .large,
+:global .medium {
+  :local .openShareDialogBt {
+    &._ios {
+      position: relative;
+      height: 35px;
+      bottom: 6px;
+    }
+  }
+}
+
+:global .small {
+  :local .bt {
+    width: 27px;
+    height: 22px;
+  }
+
+  :local .seeAgainBt {
+    width: 18px;
+  }
+
+  :local .btsGroup {
+    margin: 21px;
+  }
+}
+
+:global .x-small {
+  :local .bt {
+    width: 18px;
+    height: 15px;
+  }
+
+  :local .seeAgainBt {
+    width: 12px;
+  }
+
+  :local .openShareDialogBt {
+    &._ios {
+      position: relative;
+      height: 22px;
+      background-size: contain;
+      bottom: 6px;
+    }
+  }
+
+  :local .btsGroup {
+    margin: 13px;
+
+    &.left {
+      button {
+        margin-right: 12px;
+      }
+    }
+
+    &.right {
+      button {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+:global .xx-small {
+  :local .bt {
+    width: 15px;
+    height: 12px;
+  }
+
+  :local .seeAgainBt {
+    width: 10px;
+  }
+
+  :local .btsGroup {
+    margin: 10px;
+
+    &.left {
+      button {
+        margin-right: 8px;
+      }
+    }
+
+    &.right {
+      button {
+        margin-left: 8px;
+      }
+    }
+  }
+}

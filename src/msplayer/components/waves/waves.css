@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  z-index: 11360;
+  bottom: 12%;
+}
+
+.container img {
+  width: 132px;
+  height: 72px;
+}
+

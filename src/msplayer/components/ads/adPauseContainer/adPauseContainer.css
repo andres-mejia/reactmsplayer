@@ -1,0 +1,66 @@
+.container {
+	position: absolute;
+	right: 2%;
+	max-width: 40%;
+	max-height: 100vh;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	z-index: 11040;
+}
+.hidden {
+  display: none;
+}
+.closeButton {
+  position: absolute;
+  z-index: 11041;
+  display: flex;
+  align-self: flex-start;
+  width: 30px;
+  height: 29px;
+  background-color: rgba(0,0,0,.95);
+  border-radius: 50%;
+  top: -28px;
+}
+:global .large,
+:global .medium {
+  :local .closeButton {
+    top: -32px;
+  }
+}
+.closeButton::before, .closeButton::after {
+  position: absolute;
+  top: 13px;
+  left: 7px;
+  width: 16px;
+  height: 2px;
+  content: "";
+  background-color: #fff;
+  display: block;
+}
+.closeButton::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.closeButton::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.closeButton:hover { cursor: pointer; }
+:global .medium,
+:global .small,
+:global .x-small,
+:global .xx-small {
+  :local .closeButton {
+    width: 26px;
+    height: 26px;
+  }
+  :local .closeButton::before, :local .closeButton::after {
+    top: 12px;
+    left: 5px;
+  }
+}

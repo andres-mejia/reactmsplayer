@@ -1,0 +1,125 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.content {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 100%;
+  z-index: 10000000;
+}
+
+.text {
+  padding: 12px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, .75);
+  text-shadow: 1px 0px 2px black;
+}
+
+.TL {
+  top: 16px;
+  left: 16px;
+}
+
+.TC {
+  top: 16px;
+  left: 50%;
+  right: 50%;
+}
+
+.TR {
+  justify-content: flex-end;
+  top: 16px;
+  right: 16px;
+}
+
+.CL {
+  top: 50%;
+  bottom: 50%;
+  left: 16px;
+}
+
+.CC {
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+}
+
+.CR {
+  justify-content: flex-end;
+  top: 50%;
+  bottom: 50%;
+  right: 16px;
+}
+
+.BL {
+  bottom: 16px;
+  left: 16px;
+}
+
+.BC {
+  bottom: 16px;
+  left: 50%;
+  right: 50%;
+}
+
+.BR {
+  justify-content: flex-end;
+  bottom: 16px;
+  right: 16px;
+}
+
+.yellow {
+  background: #ffc000;
+}
+
+.red {
+  background: #d91c04;
+}
+
+.pink {
+  background: #fa5197;
+}
+
+.blue {
+  background: #053b6e;
+}
+
+.cyan {
+  background: #00aadb;
+}
+
+.green {
+  background: #69ac40;
+}
+
+.black {
+  border: solid 1px #666;
+  background: #1a1a1a;
+}
+
+.white {
+  border: solid 1px #ccc;
+  background: #fff;
+}

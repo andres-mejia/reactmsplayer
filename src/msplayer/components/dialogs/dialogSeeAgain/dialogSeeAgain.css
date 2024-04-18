@@ -1,0 +1,59 @@
+@import "svg_inline/list";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 11015;
+}
+
+.seeAgainIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: svg-inline(player_icon_see_again);
+  background-size: 90px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+:global .large,
+:global .medium {
+  :local .seeAgainIcon {
+    background-size: 90px;
+  }
+}
+
+:global .small {
+  :local .seeAgainIcon {
+    background-size: 60px;
+  }
+}
+
+:global .x-small {
+  :local .seeAgainIcon {
+    background-size: 50px;
+  }
+}
+
+:global .xx-small {
+  :local .seeAgainIcon {
+    background-size: 35px;
+  }
+}
+
+:global .no-cursor {
+  :local .container,
+  :local .seeAgainIcon {
+    cursor: none !important;
+  }
+}

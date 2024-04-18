@@ -1,0 +1,108 @@
+@import "svg_inline/list";
+
+.container {
+  color: white;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  padding: 0 10px;
+  background: black;
+}
+
+:global .small {
+  :local .menu{
+    bottom: 60px;
+  }
+}
+
+:global .x-small {
+  :local .menu{
+    bottom: 40px;
+  }
+}
+
+:global .xx-small {
+  :local .menu{
+    bottom: 30px;
+  }
+}
+
+.menuTitle {
+  padding: 10px;
+  border-bottom: solid 1px #979797;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid 1px #313131;
+  font-size: 18px;
+  font-weight: normal;
+  color: #7e7e7e;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.selected {
+    color: #fff;
+
+    .check {
+      visibility: visible;
+    }
+  }
+}
+
+:global .small {
+  :local .item{
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+:global .x-small {
+  :local .item{
+    font-size: 11px;
+    line-height: 10px;
+  }
+}
+
+:global .xx-small {
+  :local .item{
+    font-size: 10px;
+    line-height: 8px;
+  }
+}
+
+@media not all and (hover: none) {
+  .item:hover {
+    color: white;
+  }
+}
+
+.label {
+  white-space: nowrap;
+}
+
+.check {
+  visibility: hidden;
+  width: 14px;
+  height: 11px;
+  margin-left: 20px;
+  background-image: svg-inline(player_icon_check);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  @media($(ms_tablet)) {
+    height: 12px;
+    background-size: 15px;
+  }
+}

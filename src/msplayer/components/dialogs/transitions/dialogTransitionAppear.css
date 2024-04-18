@@ -1,0 +1,26 @@
+.dialog-appear {
+  opacity: 0.01;
+
+  &.dialog-appear-active {
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+  }
+}
+
+.dialog-enter {
+  opacity: 0.01;
+
+  &.dialog-enter-active {
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+  }
+}
+
+.dialog-leave {
+  opacity: 1;
+
+  &.dialog-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-out;
+  }
+}

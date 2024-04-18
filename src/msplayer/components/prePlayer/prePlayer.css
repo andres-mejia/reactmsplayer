@@ -1,0 +1,215 @@
+@import "svg_inline/list";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  cursor: pointer;
+  /* z-index: 11045; */
+}
+
+.bck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .6;
+}
+
+:global .large,
+:global .medium,
+:global .small,
+:global .x-small,
+:global .xx-small {
+  :local .bck {
+    opacity: 1;
+  }
+}
+
+.playIcon {
+  position: absolute;
+  z-index: 11040;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: svg-inline(player_icon_play_inset);
+  background-size: 1px; /* Por defecto tal y como viene del servidor */
+  background-position: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .01; /* Por defecto tal y como viene del servidor */
+  transition: opacity 216ms ease-out, background-size 192ms ease-out;
+
+  &:hover {
+    transition: none;
+    opacity: .8;
+  }
+}
+
+.progressBarContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .8);
+  opacity: .01;
+  transition: opacity 216ms ease-out;
+
+  svg {
+    width: 1px;
+    height: 1px;
+    transition: width 192ms ease-out, height 192ms ease-out;
+  }
+
+  .cancelBt {
+    position: absolute;
+    bottom: 16%;
+    width: 126px;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    border-radius: 58px;
+    border: solid 2px #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+}
+
+@keyframes dashAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+:global .text__over {
+  :local .playIcon {
+    background-position-y: 40%;
+  }
+}
+
+:global .opening-full--video .text__over {
+  &.small,
+  &.x-small,
+  &.xx-small{
+    :local .playIcon{
+      background-position-y: 50%;
+    }
+  }
+}
+
+:global .large,
+:global .medium {
+  :local .playIcon {
+    background-size: 90px;
+    opacity: 1;
+
+    &:hover {
+      transition: none;
+      opacity: .8;
+    }
+  }
+
+  :local .progressBarContainer {
+    opacity: 1;
+
+    svg{
+      width: 90px;
+      height: 90px;
+
+      &:hover {
+        transition: none;
+        opacity: .8;
+      }
+    }
+  }
+}
+
+:global .small {
+  :local .playIcon {
+    background-size: 60px;
+    opacity: 1;
+
+    &:hover {
+      transition: none;
+      opacity: .8;
+    }
+  }
+
+  :local .progressBarContainer {
+    opacity: 1;
+
+    svg{
+      width: 60px;
+      height: 60px;
+
+      &:hover {
+        transition: none;
+        opacity: .8;
+      }
+    }
+  }
+}
+
+:global .x-small {
+  :local .playIcon {
+    background-size: 50px;
+    opacity: 1;
+
+    &:hover {
+      transition: none;
+      opacity: .8;
+    }
+  }
+
+  :local .progressBarContainer {
+    opacity: 1;
+
+    svg{
+      width: 50px;
+      height: 50px;
+
+      &:hover {
+        transition: none;
+        opacity: .8;
+      }
+    }
+  }
+}
+
+:global .xx-small {
+  :local .playIcon {
+    background-size: 35px;
+    opacity: 1;
+
+    &:hover {
+      transition: none;
+      opacity: .8;
+    }
+  }
+
+  :local .progressBarContainer {
+    opacity: 1;
+
+    svg{
+      width: 35px;
+      height: 35px;
+
+      &:hover {
+        transition: none;
+        opacity: .8;
+      }
+    }
+  }
+}

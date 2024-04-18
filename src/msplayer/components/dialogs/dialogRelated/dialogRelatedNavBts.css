@@ -1,0 +1,156 @@
+@import "svg_inline/list";
+
+.previousBt,
+.nextBt {
+  display: table;
+  position: absolute;
+  top: 0;
+  width: 174px;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  opacity: 1;
+
+  .navIcon {
+    color: white;
+    width: 26px;
+    height: 40px;
+    font-size: 40px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    .navIcon {
+      opacity: .6;
+    }
+  }
+}
+
+.navIcon {
+  padding-left: 30px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.previousBt {
+  left: 0;
+  text-align: left;
+  background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0));
+
+  .navIcon {
+    background-image: svg-inline(player_icon_previous);
+  }
+
+  &:hover {
+    .navIcon {
+      opacity: .6;
+    }
+  }
+}
+
+.nextBt {
+  right: 0;
+  text-align: right;
+  background-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
+
+  .navIcon {
+    background-image: svg-inline(player_icon_next);
+  }
+
+  &:hover {
+    .navIcon {
+      opacity: .6;
+    }
+  }
+}
+
+:global .medium {
+  :local .previousBt,
+  :local .nextBt {
+    width: 131px;
+  }
+}
+
+:global .small,
+:global .x-small,
+:global .xx-small {
+  :local .previousBt,
+  :local .nextBt{
+    width: 85px;
+
+    .navIcon{
+      width: 19px;
+      height: 30px;
+      font-size: 30px;
+    }
+  }
+
+  :local .previousBt{
+    .navIcon{
+      padding-left: 15px;
+    }
+  }
+
+  :local .nextBt{
+    .navIcon{
+      padding-right: 15px;
+    }
+  }
+}
+
+:global .x-small,
+:global .xx-small {
+  :local .previousBt,
+  :local .nextBt {
+    width: 55px;
+
+    .navIcon {
+      width: 12px;
+      height: 19px;
+      font-size: 19px;
+    }
+  }
+
+  :local .previousBt {
+    .navIcon {
+      padding-left: 11px;
+    }
+  }
+
+  :local .nextBt {
+    .navIcon {
+      padding-right: 11px;
+    }
+  }
+}
+
+:global .xx-small {
+  :local .previousBt,
+  :local .nextBt {
+    .navIcon{
+      width: 11px;
+      height: 16px;
+      font-size: 16px;
+    }
+  }
+
+  :local .previousBt{
+    .navIcon{
+      padding-left: 10px;
+    }
+  }
+
+  :local .nextBt{
+    .navIcon{
+      padding-right: 10px;
+    }
+  }
+}
+
+:global .is-mobile {
+  :local .previousBt,
+  :local .nextBt {
+    display: none !important;
+  }
+}

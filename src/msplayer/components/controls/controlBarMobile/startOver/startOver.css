@@ -1,0 +1,55 @@
+@import "svg_inline/list";
+
+.container {
+  position: absolute;
+  display: flex;
+  padding: 10px 18px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  white-space: nowrap;
+  background: none;
+  border: solid 0.5px #ffffff;
+  border-radius: 5px !important;
+  outline: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  &.startOver {
+    .icon {
+      background-image: svg-inline(player_icon_play);
+    }
+  }
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-image: svg-inline(player_icon_start_over);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+
+.text {
+  display: block;
+  color: #ffffff;
+}
+
+:global .large,
+:global .medium {
+  :local .container {
+    font-size: 20px;
+
+    &.mobile {
+      bottom: 24px;
+    }
+  }
+  :local .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

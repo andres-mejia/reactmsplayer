@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  transition: opacity 192ms ease-out;
+}
+
+:global .large,
+:global .medium,
+:global .small,
+:global .x-small,
+:global .xx-small {
+  :local .container {
+    opacity: 1;
+  }
+}
+
+.img {
+  position: relative;
+  width: 100% !important;
+  object-fit: cover !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.imgFullscreen{
+  position: relative;
+  top: 50%;
+}

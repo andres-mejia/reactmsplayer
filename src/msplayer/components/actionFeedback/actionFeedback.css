@@ -1,0 +1,85 @@
+@import "svg_inline/list";
+
+@keyframes fade-out-large {
+  from { opacity: 1; background-size: 96px; }
+  to { opacity: 0; background-size: 144px; }
+}
+
+@keyframes fade-out-medium {
+  from { opacity: 1; background-size: 196px; }
+  to { opacity: 0; background-size: 144px; }
+}
+
+@keyframes fade-out-small {
+  from { opacity: 1; background-size: 64px; }
+  to { opacity: 0; background-size: 96px; }
+}
+
+@keyframes fade-out-x-small {
+  from { opacity: 1; background-size: 40px; }
+  to { opacity: 0; background-size: 60px; }
+}
+
+@keyframes fade-out-xx-small {
+  from { opacity: 1; background-size: 28px; }
+  to { opacity: 0; background-size: 42px; }
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 120px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+    opacity: 0;
+    animation: fade-out-large 750ms 1 ease-out;
+  }
+
+  .iconPlay {
+    background-image: svg-inline(player_icon_play_inset);
+  }
+
+  .iconPause {
+    background-image: svg-inline(player_icon_pause_inset);
+  }
+}
+
+:global .small {
+  :local .icon {
+    background-size: 80px;
+    animation: fade-out-small 750ms 1 ease-out;
+  }
+}
+
+:global .x-small {
+  :local .icon {
+    background-size: 50px;
+    animation: fade-out-x-small 750ms 1 ease-out;
+  }
+}
+
+:global .xx-small {
+  :local .icon {
+    background-size: 35px;
+    animation: fade-out-xx-small 750ms 1 ease-out;
+  }
+}

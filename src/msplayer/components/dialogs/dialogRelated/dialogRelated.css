@@ -1,0 +1,46 @@
+.container,
+.scrollWrapper,
+.scrollContent {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  /* @include animation(ms-fade-in $default-fade-animation-duration 1); */
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+
+  .scrollWrapper,
+  .scrollContent {
+    overflow: hidden;
+  }
+}
+
+:global .is-mobile {
+  :local .container {
+    .scrollWrapper{
+      overflow: scroll;
+    }
+  }
+}
+
+:global .small,
+:global .x-small,
+:global .xx-small {
+  :local .container {
+    .scrollWrapper{
+      overflow: scroll;
+    }
+  }
+}

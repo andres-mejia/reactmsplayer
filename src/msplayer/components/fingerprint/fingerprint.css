@@ -1,0 +1,43 @@
+.container {
+  position: absolute;
+  background: rgb(63, 118, 52);
+  color: rgb(240, 240, 240);
+  padding: 5px 10px;
+  z-index: 11030;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+}
+
+:global .xx-small {
+  :local .container {
+    margin-bottom: 24px;
+    margin-right: 10px;
+  }
+}
+
+:global .x-small {
+  :local .container {
+    margin-bottom: 40px;
+    margin-right: 10px;
+  }
+}
+
+:global .small {
+  :local .container {
+    margin-bottom: 64px;
+    margin-right: 20px;
+  }
+}
+
+:global .medium {
+  :local .container {
+    margin-bottom: 88px;
+  }
+}
+
+:global .large {
+  :local .container {
+    margin-bottom: 90px;
+  }
+}

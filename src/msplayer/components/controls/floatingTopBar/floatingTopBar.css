@@ -1,0 +1,59 @@
+@import "svg_inline/list";
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.padButton {
+    padding: 20px;
+    z-index: 15020;
+    cursor: pointer;
+}
+
+.closeBt {
+    width:28px;
+    position:relative;
+    cursor: pointer;
+    top: 5px;
+    margin-right: -5px;
+}
+
+.closeBt:before, .closeBt:after {
+    position:absolute;
+    content:"";
+    width: 100%;
+    background: #fff;
+    height:1.5px;
+}
+
+.closeBt:before {
+    transform: rotate(45deg);
+}
+
+.closeBt:after {
+    transform: rotate(-45deg);
+}
+
+.shrinkBt {
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	border-width: 2px 2px 0 0;
+	border-color: #fafafa;
+	border-style: solid;
+	
+	&._inactive {
+		transform: rotate(-45deg);
+	}
+
+	&._active {
+		transform: rotate(135deg);
+        margin-top: -10px;
+	}
+}

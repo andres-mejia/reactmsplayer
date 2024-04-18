@@ -1,0 +1,304 @@
+@import "svg_inline/list";
+
+.container{
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-self: flex-start;
+  background-image: linear-gradient(to top, rgba(0,0,0,0),#000000);
+  height: 175px;
+  pointer-events: none;
+  z-index: 11005;
+}
+
+:global .xx-small {
+  :local .background {
+    height: 66px;
+  }
+}
+
+:global .x-small {
+  :local .background  {
+    height: 74px;
+  }
+}
+
+:global .small {
+  :local .background {
+    height: 144px;
+  }
+}
+
+:global .large {
+  :local .background {
+    height: 233px;
+  }
+}
+
+.textWrapper {
+  position: absolute;
+  color: white;
+  padding: 28px 153px 0 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  text-align: left;
+  font-weight: 300;
+  z-index: 11020;
+  pointer-events: none;
+
+  &.extraPaddingLeft {
+    padding-left: 81px;
+    padding-right: 30px;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  display: inline;
+  font-size: 30px;
+  line-height: 1.27;
+  font-weight: 400;
+}
+
+.shareBt {
+  display: inline;
+  width: 28px;
+  height: 28px;
+  margin-left: 20px;
+  background-image: svg-inline(player_icon_share);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: contain;
+  pointer-events: auto;
+  z-index: 11020;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.subtitleWrapper {
+  /*display: flex;
+  align-items: center;*/
+  margin-top: 10px;
+  font-family: flama-light, inherit;
+}
+
+.subtitle,
+.description {
+  display: inline;
+  font-size: 20px;
+}
+
+.description {
+  font-family: flama-basic, inherit;
+
+  &::before {
+    padding-left: 10px;
+    padding-right: 10px;
+    content: "•";
+    color: rgb(6, 199, 228);
+  }
+}
+
+:global .xx-small {
+  :local .textWrapper {
+    padding: 8px 20px 0 9px;
+
+    &.extraPaddingLeft {
+      padding-left: 18px;
+      padding-right: 9px;
+    }
+  }
+
+  :local .title {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  :local .shareBt {
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+  }
+
+  :local .subtitleWrapper {
+    /*flex-direction: column;
+    align-items: flex-start;*/
+    margin-top: 6px;
+  }
+
+  :local .subtitle,
+  :local .description {
+    font-size: 12px;
+  }
+
+  :local .description {
+    &::before {
+      /*content: none;*/
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .textWrapper {
+    padding: 10px 66px 0 11px;
+
+    &.extraPaddingLeft {
+      padding-left: 39px;
+      padding-right: 11px;
+    }
+  }
+
+  :local .title  {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  :local .shareBt {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+  }
+
+  :local .subtitleWrapper {
+    margin-top: 6px;
+  }
+
+  :local .subtitle,
+  :local .description {
+    font-size: 13px;
+  }
+
+  :local .description {
+    &::before {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+:global .small {
+  :local .textWrapper {
+    padding: 24px 98px 0 20px;
+
+    &.extraPaddingLeft {
+      padding-left: 65px;
+      padding-right: 20px;
+    }
+  }
+
+  :local .title {
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  :local .shareBt {
+    width: 22px;
+    height: 22px;
+    margin-left: 12px;
+  }
+
+  :local .subtitleWrapper {
+    margin-top: 8px;
+  }
+
+  :local .subtitle,
+  :local .description {
+    font-size: 15px;
+  }
+
+  :local .description {
+    &::before {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+
+  &.player-mobile {
+    :local .textWrapper {
+      padding: 11px 98px 0 20px;
+  
+      &.extraPaddingLeft {
+        padding-left: 45px;
+        padding-right: 20px;
+      }
+    }
+
+    :local .title {
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    :local .shareBt {
+      width: 14px;
+      height: 13px;
+      margin-left: 12px;
+    }
+  
+    :local .subtitleWrapper {
+      margin-top: 5px;
+    }
+  
+    :local .subtitle,
+    :local .description {
+      font-size: 13px;
+    }
+  
+    :local .description {
+      &::before {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+    }
+  }
+}
+
+:global .large {
+  :local .textWrapper {
+    padding: 30px 171px 0 30px;
+
+    &.extraPaddingLeft {
+      padding-left: 81px;
+      padding-right: 30px;
+    }
+  }
+
+  :local .title {
+    font-size: 35px;
+    line-height: 1.23;
+  }
+
+  :local .shareBt {
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+  }
+
+  :local .subtitleWrapper {
+    margin-top: 12px;
+  }
+
+  :local .subtitle,
+  :local .description {
+    font-size: 25px;
+  }
+
+  :local .description {
+    &::before {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

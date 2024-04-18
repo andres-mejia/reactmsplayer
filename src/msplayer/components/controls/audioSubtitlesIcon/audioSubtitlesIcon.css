@@ -1,0 +1,463 @@
+@import "../../../../styles/svg_inline/list.css";
+
+.bt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+.bt_chat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+.bt_chat_mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+.bt_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+.bt_mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+.bt_close_mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+.bt_chat_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+.bt_chat_close_mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background-image: svg-inline(player_icon_subtitles);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  z-index: 11035;
+}
+
+:global .xx-small {
+  :local .bt {
+    width: 32px;
+    height: 26px;
+    background-size: 16px;
+    top: 3px;
+  }
+
+  :local .bt_chat {
+    width: 32px;
+    height: 26px;
+    right: 164px;
+    background-size: 24px;
+    top: 30px;
+  }
+
+  :local .bt_close {
+    width: 32px;
+    height: 26px;
+    right: 26px;
+    background-size: 18px;
+    top: 0px;
+  }
+
+  :local .bt_close_mobile {
+    width: 32px;
+    height: 25px;
+    background-size: 16px;
+    right: 65px;
+    top: 5px;
+  }
+
+  :local .bt_chat_mobile {
+    width: 32px;
+    height: 25px;
+    background-size: 16px;
+    right: 33px;
+    top: 4px;
+  }
+
+  :local .bt_chat_close {
+    width: 32px;
+    height: 25px;
+    background-size: 16px;
+    right: 155px;
+    top: 4px;
+  }
+
+  :local .bt_chat_close_mobile {
+    width: 32px;
+    height: 25px;
+    background-size: 20px;
+    right: 63px;
+    top: 9px;
+  }
+}
+
+:global .x-small {
+  :local .bt  {
+    width: 32px;
+    height: 25px;
+    background-size: 20px;
+    top: 6px;
+    right: 6px;
+  }
+
+  :local .bt_chat {
+    width: 32px;
+    height: 25px;
+    right: 192px;
+    background-size: 28px;
+    top: 32px;
+  }
+
+  :local .bt_close {
+    width: 32px;
+    height: 25px;
+    background-size: 22px;
+    right: 34px;
+    top: 5px;
+  }
+
+  :local .bt_close_mobile {
+    width: 26px;
+    height: 20px;
+    background-size: 20px;
+    right: 45px;
+    top: 12px;
+  }
+
+  :local .bt_chat_mobile {
+    width: 32px;
+    height: 25px;
+    background-size: 20px;
+    right: 40px;
+    top: 5px;
+  }
+
+  :local .bt_chat_close {
+    width: 32px;
+    height: 25px;
+    background-size: 22px;
+    right: 190px;
+    top: 6px;
+  }
+
+  :local .bt_chat_close_mobile {
+    width: 32px;
+    height: 25px;
+    background-size: 20px;
+    right: 61px;
+    top: 9px;
+  }
+
+  :local .bt_mobile {
+    width: 32px;
+    height: 25px;
+    top: 6px;
+    right: 6px;
+    background-size: 20px;
+  }
+}
+
+:global .small {
+  :local .bt {
+    width: 40px;
+    height: 38px;
+    background-size: 30px;
+    top: 15px;
+    right: 15px;
+  }
+
+  :local .bt_chat {
+    width: 40px;
+    height: 38px;
+    background-size: 30px;
+    top: 24px;
+    right: 202px;
+  }
+
+  :local .bt_close {
+    width: 40px;
+    height: 38px;
+    right: 55px;
+    background-size: 30px;
+    top: 17px;
+  }
+
+  :local .bt_close_mobile {
+    width: 32px;
+    height: 25px;
+    right: 60px;
+    background-size: 30px;
+    top: 12px;
+
+    @media (orientation: portrait) {
+      top: 26px;
+    }
+  }
+
+  :local .bt_chat_close {
+    width: 40px;
+    height: 38px;
+    right: 238px;
+    background-size: 30px;
+    top: 17px;
+  }
+
+  :local .bt_chat_mobile {
+    width: 40px;
+    height: 38px;
+    right: 34px;
+    background-size: 20px;
+  }
+
+  :local .bt_chat_close_mobile {
+    width: 32px;
+    height: 25px;
+    background-size: 20px;
+    right: 76px;
+    top: 11px;
+  }
+
+  :local .bt_mobile {
+    width: 40px;
+    height: 38px;
+    right: 7px;
+    background-size: 24px;
+    top: 5px;
+  }
+
+}
+
+:global .medium {
+  :local .bt {
+    width: 40px;
+    height: 38px;
+    background-size: 35px;
+    top: 26px;
+    right: 26px;
+  }
+
+  :local .bt_chat {
+    width: 40px;
+    height: 38px;
+    background-size: 35px;
+    right: 224px;
+    top: 26px;
+  }
+
+  :local .bt_close {
+    width: 40px;
+    height: 38px;
+    right: 80px;
+    background-size: 35px;
+    top: 26px;
+  }
+
+  :local .bt_close_mobile {
+    width: 88px;
+    height: 88px;
+    right: 68px;
+    background-size: 35px;
+    top: 5px;
+  }
+
+  :local .bt_chat_close {
+    width: 40px;
+    height: 38px;
+    right: 275px;
+    background-size: 35px;
+    top: 26px;
+  }
+
+  :local .bt_chat_mobile {
+    width: 40px;
+    height: 38px;
+    right: 70px;
+    background-size: 35px;
+    top: 21px;
+  }
+
+  :local .bt_mobile {
+    width: 32px;
+    height: 25px;
+    top: 22px;
+    right: 22px;
+    background-size: 28px;
+  }
+
+  :local .bt_chat_close_mobile {
+    width: 40px;
+    height: 38px;
+    background-size: 35px;
+    right: 118px;
+    top: 28px;
+  }
+
+}
+
+:global .large {
+  :local .bt {
+    width: 40px;
+    height: 38px;
+    background-size: 35px;
+    top: 28px;
+    right: 28px;
+  }
+
+  :local .bt_chat {
+    width: 40px;
+    height: 38px;
+    right: 228px;
+    background-size: 35px;
+    top: 26px;
+  }
+
+  :local .bt_close {
+    width: 40px;
+    height: 38px;
+    right: 85px;
+    background-size: 35px;
+    top: 26px;
+  }
+  
+  :local .bt_close_mobile {
+    width: 35px;
+    height: 28px;
+    right: 90px;
+    background-size: 35px;
+    top: 33px;
+  }
+
+  :local .bt_chat_close {
+    width: 40px;
+    height: 38px;
+    right: 275px;
+    background-size: 35px;
+    top: 26px;
+  }
+
+  :local .bt_chat_mobile {
+    width: 40px;
+    height: 38px;
+    right: 73px;
+    background-size: 35px;
+    top: 22px;
+  }
+
+  :local .bt_mobile {
+    width: 32px;
+    height: 25px;
+    top: 26px;
+    right: 26px;
+    background-size: 32px;
+  }
+
+  :local .bt_chat_close_mobile {
+    width: 40px;
+    height: 38px;
+    background-size: 35px;
+    right: 120px;
+    top: 26px;
+  }
+}

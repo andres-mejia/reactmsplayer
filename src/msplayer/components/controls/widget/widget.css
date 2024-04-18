@@ -1,0 +1,7 @@
+.container {
+  position: absolute;
+  background: rgba(72, 245, 81, 0.02);
+  z-index: 11046;
+  display: contents;
+  /* TODO .- revisar tag botones */
+}

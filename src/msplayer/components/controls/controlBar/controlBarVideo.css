@@ -1,0 +1,329 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11016;
+}
+
+.wrapper_iphone {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11016;
+}
+
+.wrapper_ads {
+  width: 80%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 94px;
+  padding: 0 30px;
+
+  @media ($(ms_fdesktop)) {
+    z-index: 11040;
+  }
+
+  &._withMultichannel {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+.background{
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0),#000000);
+  height: 100px;
+  z-index: 11006;
+}
+
+:global .xx-small {
+  :local .background {
+    height: 66px;
+  }
+}
+
+:global .x-small {
+  :local .background  {
+    height: 74px;
+  }
+}
+
+:global .small {
+  :local .background {
+    height: 144px;
+  }
+}
+
+:global .large {
+  :local .background {
+    height: 125px;
+  }
+}
+
+.controlBar__panel-enter {
+  opacity: 0.01;
+  bottom: -94px;
+}
+
+:global .xx-small {
+  :local .controlBar__panel-enter {
+    bottom: -45px;
+  }
+}
+
+:global .x-small {
+  :local .controlBar__panel-enter  {
+    bottom: -53px;
+  }
+}
+
+:global .small {
+  :local .controlBar__panel-enter  {
+    bottom: -79px;
+  }
+}
+
+.controlBar__panel-enter{
+  &.controlBar__panel-enter-active {
+    opacity: 1;
+    bottom: 0;
+    transition: opacity 400ms ease-out, bottom 300ms ease-out;
+  }
+}
+
+.controlBar__panel-leave {
+  opacity: 1;
+  bottom: 0;
+}
+
+.controlBar__panel-leave {
+  &.controlBar__panel-leave-active {
+    opacity: 0.01;
+    bottom: -94px;
+    transition: opacity 300ms ease-out, bottom 400ms ease-out;
+  }
+}
+
+:global .xx-small {
+  :local .controlBar__panel-leave {
+    &.controlBar__panel-leave-active {
+      bottom: -45px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .controlBar__panel-leave {
+    &.controlBar__panel-leave-active {
+      bottom: -53px;
+    }
+  }
+}
+
+:global .small {
+  :local .controlBar__panel-leave {
+    &.controlBar__panel-leave-active {
+      bottom: -79px;
+    }
+  }
+}
+
+.controlBar__panel-appear {
+  opacity: 0.01;
+  bottom: -94px;
+}
+
+:global .xx-small {
+  :local .controlBar__panel-appear {
+    bottom: -45px;
+  }
+}
+
+:global .x-small {
+  :local .controlBar__panel-appear  {
+    bottom: -53px;
+  }
+}
+
+:global .small {
+  :local .controlBar__panel-appear  {
+    bottom: -79px;
+  }
+}
+.controlBar__panel-appear {
+  &.controlBar__panel-appear-active {
+    opacity: 1;
+    bottom: 0;
+    transition: opacity 400ms ease-out, bottom 300ms ease-out;
+  }
+}
+
+.controlsContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  top: 32px;
+  align-self: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 11010;
+}
+
+.controlsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.controls{
+  display: flex;
+  z-index: 11025;
+  button {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+:global .xx-small {
+  :local .container {
+    height: 45px;
+    padding: 0 10px;
+
+    &._withMultichannel {
+      height: auto;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .container {
+    height: 53px;
+    padding: 0 10px;
+
+    &._withMultichannel {
+      height: auto;
+      padding-bottom: 14px;
+    }
+  }
+
+  :local .wrapper_iphone {
+    bottom: 0;
+  }
+}
+
+:global .small {
+  :local .container {
+    height: 79px;
+    padding: 0 20px;
+
+    &._withMultichannel {
+      height: auto;
+      padding-bottom: 25px;
+    }
+  }
+
+}
+
+:global .medium {
+  :local .container {
+    height: 94px;
+
+    &._withMultichannel {
+      height: auto;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+:global .large {
+  :local .container {
+    height: 94px;
+
+    &._withMultichannel {
+      height: auto;
+      padding-bottom: 24px;
+    }
+  }
+}
+
+:global .xx-small {
+  :local .controlsContainer {
+    height: 22px;
+    top: 20px;
+  }
+}
+
+:global .x-small {
+  :local .controlsContainer {
+    height: 28px;
+    top: 22px;
+  }
+}
+
+:global .small {
+  :local .controlsContainer {
+    height: 40px;
+    top: 31px;
+  }
+}
+
+:global .medium {
+  :local .controlsContainer {
+    height: 58px;
+    top: 28px;
+  }
+}
+
+:global .large {
+  :local .controlsContainer {
+    height: 58px;
+    top: 28px;
+  }
+}
+
+.downloadLink {
+  display: block;
+  width: 42px;
+  height: 28px;
+}
+
+:global .xx-small {
+  :local .downloadLink {
+    width: 27px;
+    height: 16px;
+  }
+}
+
+:global .x-small {
+  :local .downloadLink {
+    width: 27px;
+    height: 16px;
+  }
+}
+
+:global .small {
+  :local .downloadLink {
+    width: 34px;
+    height: 20px;
+  }
+}

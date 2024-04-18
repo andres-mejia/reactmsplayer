@@ -1,0 +1,35 @@
+.container{
+  width: auto;
+  height: 28px;
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: white;
+  font-weight: 300;
+}
+
+:global .small {
+  :local .container{
+    height: 22px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+:global .x-small {
+  :local .container{
+    height: 15px;
+    font-size: 11px;
+    line-height: 15px;  
+  }
+}
+
+:global .xx-small {
+  :local .container{
+    height: 12px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

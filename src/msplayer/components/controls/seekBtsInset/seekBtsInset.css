@@ -1,0 +1,189 @@
+@import "svg_inline/list";
+
+@keyframes animation-icon-backward {
+  from { opacity: 1; transform: scaleX(-1); }
+  to { opacity: 0; transform: scaleX(-1) rotate(110deg); }
+}
+
+@keyframes animation-text-backward {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translateX(-60px); }
+}
+
+@keyframes animation-icon-forward {
+  from { opacity: 1; }
+  to { opacity: 0; transform: rotate(110deg); }
+}
+
+@keyframes animation-text-forward {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translateX(60px); }
+}
+
+.seekBtsInset {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.containerOpacity {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, #000 100%)!important;
+}
+
+.seekBtContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 45px);
+  height: 100%;
+  z-index: 11016;
+}
+
+.seekBt {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 0.5px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 11039;
+
+  &.backward {
+    &.videogallery {
+      left: 22%;
+    }
+  }
+
+  &.forward {
+    &.videogallery {
+      right: 22%;
+    }
+  }
+}
+
+:global .large {
+  :local .seekBtContainer {
+    width: calc(50% - 45px);
+  }
+  :local .seekBt {
+    width: 65px;
+    height: 78px;
+    font-size: 16px;
+  }
+}
+
+:global .medium {
+  :local .seekBtContainer {
+    width: calc(50% - 45px);
+  }
+  :local .seekBt {
+    width: 56px;
+    height: 67px;
+    font-size: 14px;
+  }
+}
+
+:global .small {
+  :local .seekBtContainer {
+    width: calc(50% - 30px);
+  }
+  :local .seekBt {
+    width: 44px;
+    height: 55px;
+    font-size: 11px;
+  }
+
+  &.player-mobile {
+    :local .seekBt {
+      width: 35px;
+      height: 44px;
+      font-size: 9px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .seekBtContainer {
+    width: calc(50% - 25px);
+  }
+  :local .seekBt {
+    width: 38px;
+    height: 45px;
+    font-size: 9px;
+  }
+}
+
+:global .xx-small {
+  :local .seekBtContainer {
+    width: calc(50% - 12px);
+  }
+  :local .seekBt {
+    width: 30px;
+    height: 36px;
+    font-size: 8px;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: svg-inline(player_icon_seek);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &.backward {
+    transform: scaleX(-1);
+  }
+}
+
+.text {
+  position: absolute;
+  top: 14%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.feedback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .icon {
+    opacity: 0;
+
+    &.backward {
+      animation: animation-icon-backward 750ms 1 ease-out;
+    }
+
+    &.forward {
+      animation: animation-icon-forward 750ms 1 ease-out;
+    }
+  }
+
+  .text {
+    opacity: 0;
+
+    &.backward {
+      animation: animation-text-backward 750ms 1 ease-out;
+    }
+
+    &.forward {
+      animation: animation-text-forward 750ms 1 ease-out;
+    }
+  }
+}

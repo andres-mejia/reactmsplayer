@@ -1,0 +1,123 @@
+.scrubBarThumb{
+  position: absolute;
+  bottom: 20px;
+  width: 190px; /* Cuidado tiene que ser igual que el _phantom */
+  height: 107px; /* Cuidado tiene que ser igual que el _phantom */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+  border: solid 5px white;
+  background: white;
+}
+
+:global .small {
+  :local .scrubBarThumb{
+    width: 144px;
+    height: 81px;
+    border: solid 3px white;
+    bottom: 17px;
+  }
+}
+
+:global .x-small {
+  :local .scrubBarThumb{
+    width: 96px;
+    height: 54px;
+    border: solid 2px white;
+    bottom: 14px;
+  }
+}
+
+:global .xx-small {
+  :local .scrubBarThumb{
+    width: 96px;
+    height: 54px;
+    border: solid 2px white;
+    bottom: 12px;
+  }
+}
+
+.scrubBarThumbGhost{
+  width: 190px; /* Cuidado tiene que ser igual que el _phantom */
+  height: 107px; /* Cuidado tiene que ser igual que el _phantom */
+  display: none;
+}
+
+.time{
+  position: relative;
+  width: auto;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 3px;
+}
+
+:global .small {
+  :local .time{
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 3px;
+  }
+}
+
+:global .x-small {
+  :local .time{
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 3px;
+  }
+}
+
+:global .xx-small {
+  :local .time{
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 3px;
+  }
+}
+
+.imageWrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+  font-size: 18px;
+  font-weight: 300;
+  margin-right: 3px;
+}
+
+:global .small {
+  :local .imageWrapper{
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 3px;
+  }
+}
+
+:global .x-small {
+  :local .imageWrapper{
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 3px;
+  }
+}
+
+:global .xx-small {
+  :local .imageWrapper{
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 3px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}

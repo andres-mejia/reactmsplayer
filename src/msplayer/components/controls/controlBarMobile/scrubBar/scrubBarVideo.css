@@ -1,0 +1,46 @@
+.container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255,255,255,0.60);
+  align-self: center;
+}
+
+.scrubBar{
+  position: absolute;
+  height: 26px;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  top: -10px;
+  z-index: 11040; /* Adecual */
+}
+
+.playbackBar{
+  position: absolute;
+  z-index: 11035; /* Adecuar */
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bufferBar{
+  position: absolute;
+  z-index: 11030; /* Adecuar */
+  height: 100%;
+  background-color: rgba(255,255,255,0.35);
+}
+
+.scrubber{
+  position: relative;
+  background-color: #fff;
+  min-height: 12px;
+  min-width: 12px;
+  left: 7px;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}

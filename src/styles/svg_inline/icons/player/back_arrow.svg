@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="105px" height="86px" viewBox="0 0 105 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>flecha volver</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons2" transform="translate(-80.000000, -483.000000)" fill="#FFFFFF">
+            <g id="flecha-volver" transform="translate(132.000000, 526.000000) rotate(-180.000000) translate(-132.000000, -526.000000) translate(79.000000, 483.000000)">
+                <g id="Group-2" transform="translate(52.000000, 0.000000)">
+                    <g id="flecha">
+                        <path d="M53.0078,42.5312 L12.4598,1.9882 C9.8268,-0.6438 5.5198,-0.6438 2.8878,1.9882 C0.2558,4.6212 0.2558,8.9282 2.8878,11.5602 L33.8618,42.5342 L2.8878,73.5082 C0.2558,76.1402 0.2558,80.4472 2.8878,83.0792 C5.5198,85.7122 9.8268,85.7122 12.4598,83.0792 L53.0078,42.5372 L53.0048,42.5342 L53.0078,42.5312 Z" id="Fill-13"></path>
+                    </g>
+                </g>
+                <path d="M6.911,36 C3.11,36 0,39.11 0,42.911 C0,46.711 3.11,49.821 6.911,49.821 L84.867,49.821 C88.668,49.821 91.778,46.711 91.778,42.911 C91.778,39.11 88.668,36 84.867,36 L6.911,36 Z" id="Fill-118"></path>
+            </g>
+        </g>
+    </g>
+</svg>

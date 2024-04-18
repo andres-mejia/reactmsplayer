@@ -1,0 +1,134 @@
+.container{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  height: 80px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 11020;
+}
+
+:global .xx-small {
+  :local .container {
+    height: 47px;
+  }
+}
+
+:global .x-small {
+  :local .container {
+    height: 47px;
+  }
+}
+
+:global .small {
+  :local .container {
+    height: 64px;
+  }
+}
+
+.background{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-self: flex-start;
+  background: rgba(0, 0, 0, .8);
+  height: 70px;
+  z-index: 11006;
+}
+
+:global .xx-small {
+  :local .background {
+    height: 40px;
+  }
+}
+
+:global .x-small {
+  :local .background  {
+    height: 40px;
+  }
+}
+
+:global .small {
+  :local .background {
+    height: 54px;
+  }
+}
+
+.controlsContainer{
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px 0 25px;
+  z-index: 11010;
+}
+
+.controlsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+:global .xx-small {
+  :local .controlsContainer {
+    top: 7px;
+    height: 40px;
+    padding: 0 12px 0 15px;
+  }
+}
+
+:global .x-small {
+  :local .controlsContainer {
+    top: 7px;
+    height: 40px;
+    padding: 0 12px 0 15px;
+  }
+}
+
+:global .small {
+  :local .controlsContainer {
+    height: 54px;
+    padding: 0 15px 0 20px;
+  }
+}
+
+.controls{
+  display: flex;
+  align-items: center;
+  z-index: 11025;
+}
+
+.downloadLink {
+  display: block;
+  width: 42px;
+  height: 28px;
+}
+
+:global .xx-small {
+  :local .downloadLink {
+    width: 27px;
+    height: 16px;
+  }
+}
+
+:global .x-small {
+  :local .downloadLink {
+    width: 27px;
+    height: 16px;
+  }
+}
+
+:global .small {
+  :local .downloadLink {
+    width: 34px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,385 @@
+@import "svg_inline/list";
+
+.container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 30px 30px;
+  z-index: 11020;
+
+  &._withMultichannel_multisite {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+.background{
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0),#000000);
+  height: 174px;
+}
+
+.scrubBarWrapper {
+  position: relative;
+  display: flex;
+  margin-top: 17px;
+}
+
+.currentTime,
+.duration {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.currentTime {
+  margin-right: 15px;
+}
+
+.duration {
+  margin-left: 15px;
+}
+
+.btsWrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 100%;
+  z-index: 11010;
+}
+
+.startOverBtWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bt {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-left: 18px;
+  border-radius: 0;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.toggleFullScreenBt {
+  width: 32px;
+
+  &._in {
+    background-image: svg-inline(player_icon_fullscreen_in);
+  }
+
+  &._out {
+    background-image: svg-inline(player_icon_fullscreen_out);
+  }
+}
+
+.shareBt {
+  &._ios {
+    height: 34px;
+    background-image: svg-inline(player_icon_share_ios);
+  }
+
+  &._android {
+    background-image: svg-inline(player_icon_share);
+  }
+}
+
+.downloadBt {
+  background-image: svg-inline(player_icon_download);
+}
+
+:global .xx-small {
+  :local .container {
+    padding: 0 10px 15px;
+
+    &._withMultichannel_multisite {
+      height: auto;
+      padding: 0 0px;
+    }
+  }
+
+  :local .background {
+    height: 66px;
+  }
+
+  :local .scrubBarWrapper {
+    margin-top: 16px;
+  }
+
+  :local .currentTime,
+  :local .duration {
+    font-size: 11px;
+  }
+
+  :local .currentTime {
+    margin-right: 10px;
+  }
+  
+  :local .duration {
+    margin-left: 10px;
+  }
+
+  :local .bt {
+    width: 18px;
+    height: 18px;
+    margin-left: 16px;
+  }
+  
+  :local .toggleFullScreenBt {
+    width: 23px;
+  }
+
+  :local .shareBt {
+    &._ios {
+      height: 22px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .container {
+    padding: 0 15px 15px;
+
+    &._withMultichannel_multisite {
+      height: auto;
+      padding: 0 0px;
+    }
+  }
+
+  :local .background  {
+    height: 74px;
+  }
+
+  :local .scrubBarWrapper {
+    margin-top: 15px;
+  }
+
+  :local .currentTime,
+  :local .duration {
+    font-size: 11px;
+  }
+
+  :local .bt {
+    width: 20px;
+    height: 20px;
+    margin-left: 19px;
+  }
+
+  :local .toggleFullScreenBt {
+    width: 26px;
+
+    &._withMultichannel_multisite {
+      margin-right: 10px;
+      margin-bottom: 8px;
+    }
+
+  }
+
+  :local .shareBt {
+    &._ios {
+      height: 24px;
+    }
+  }
+}
+
+:global .small {
+  :local .container {
+    padding: 0 20px 15px;
+
+    &._withMultichannel_multisite {
+      height: auto;
+      padding: 0 0px;
+    }
+    
+  }
+
+  :local .background {
+    height: 144px;
+  }
+
+  :local .scrubBarWrapper {
+    margin-top: 21px;
+  }
+
+  :local .currentTime {
+    margin-right: 20px;
+  }
+  
+  :local .duration {
+    margin-left: 20px;
+  }
+
+  :local .bt {
+    margin-left: 22px;
+  }
+
+  :local .toggleFullScreenBt {
+    &._withMultichannel_multisite {
+      margin-right: 12px;
+      margin-bottom: 8px;
+    }
+
+  }
+
+}
+
+:global .medium {
+  :local .container {
+    &._withMultichannel_multisite {
+      height: auto;
+      padding: 0 0px;
+    }
+  }
+
+  :local .toggleFullScreenBt {
+    &._withMultichannel_multisite {
+      margin-right: 12px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+:global .large {
+  :local .background {
+    height: 233px;
+  }
+
+  :local .container {
+    &._withMultichannel_multisite {
+      height: auto;
+      padding: 0 0px;
+    }
+  }
+
+  :local .toggleFullScreenBt {
+    &._withMultichannel_multisite {
+      margin-right: 14px;
+      margin-bottom: 10px;
+    }
+
+  }
+}
+
+/* Animation */
+
+.controlBar__panel-enter {
+  opacity: 0.01;
+  bottom: -94px;
+}
+
+:global .xx-small {
+  :local .controlBar__panel-enter {
+    bottom: -45px;
+  }
+}
+
+:global .x-small {
+  :local .controlBar__panel-enter  {
+    bottom: -53px;
+  }
+}
+
+:global .small {
+  :local .controlBar__panel-enter  {
+    bottom: -79px;
+  }
+}
+
+.controlBar__panel-enter{
+  &.controlBar__panel-enter-active {
+    opacity: 1;
+    bottom: 0;
+    transition: opacity 400ms ease-out, bottom 300ms ease-out;
+  }
+}
+
+.controlBar__panel-leave {
+  opacity: 1;
+  bottom: 0;
+}
+
+.controlBar__panel-leave {
+  &.controlBar__panel-leave-active {
+    opacity: 0.01;
+    bottom: -94px;
+    transition: opacity 300ms ease-out, bottom 400ms ease-out;
+  }
+}
+
+:global .xx-small {
+  :local .controlBar__panel-leave {
+    &.controlBar__panel-leave-active {
+      bottom: -45px;
+    }
+  }
+}
+
+:global .x-small {
+  :local .controlBar__panel-leave {
+    &.controlBar__panel-leave-active {
+      bottom: -53px;
+    }
+  }
+}
+
+:global .small {
+  :local .controlBar__panel-leave {
+    &.controlBar__panel-leave-active {
+      bottom: -79px;
+    }
+  }
+}
+
+.controlBar__panel-appear {
+  opacity: 0.01;
+  bottom: -94px;
+}
+
+:global .xx-small {
+  :local .controlBar__panel-appear {
+    bottom: -45px;
+  }
+}
+
+:global .x-small {
+  :local .controlBar__panel-appear  {
+    bottom: -53px;
+  }
+}
+
+:global .small {
+  :local .controlBar__panel-appear  {
+    bottom: -79px;
+  }
+}
+.controlBar__panel-appear {
+  &.controlBar__panel-appear-active {
+    opacity: 1;
+    bottom: 0;
+    transition: opacity 400ms ease-out, bottom 300ms ease-out;
+  }
+}

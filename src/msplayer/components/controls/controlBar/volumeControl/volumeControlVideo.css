@@ -1,0 +1,78 @@
+@import "svg_inline/list";
+
+.container{
+  width: 106px;
+  height: 28px;
+  display: flex;
+}
+
+:global .small {
+  :local .container{
+    width: 83px;
+    height: 22px;
+  }
+}
+
+:global .x-small {
+  :local .container{
+    width: 53px;
+    height: 15px;
+  }
+}
+
+:global .xx-small {
+  :local .container{
+    width: 46px;
+    height: 12px;
+  }
+}
+
+.volumeBarContainer{
+  height: 21px;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  position: relative;
+}
+
+:global .small {
+  :local .volumeBarContainer{
+    height: 17px;
+  }
+}
+
+:global .x-small {
+  :local .volumeBarContainer{
+    height: 11px;
+  }
+}
+
+:global .xx-small {
+  :local .volumeBarContainer{
+    height: 10px;
+  }
+}
+
+.volumeBarBck {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: svg-inline(player_icon_volume_bar);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.volumeBarValueContainer {
+  position: absolute;
+  height: 100%;
+}
+
+.volumeBarValue {
+  height: 100%;
+  background-image: svg-inline(player_icon_volume_bar);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}

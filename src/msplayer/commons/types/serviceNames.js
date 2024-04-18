@@ -1,0 +1,21 @@
+export default {
+  ADS: 'ads',
+  ANALYTICS: 'analytics',
+  CARONTE: 'caronte',
+  CERBERO: 'cerbero',
+  CONFIG: 'config',
+  DELIVERY: 'delivery',
+  GATEKEEPER: 'gatekeeper',
+  GBX: 'gbx',
+  GEOBLOCKING: 'geoblocking',
+  GEOLOCATION: 'geo',
+  MULTICHANNEL: 'multichannel',
+  NEXT: 'next',
+  NEXT_V2: 'next_v2',
+  PROGRAM: 'program',
+  RELATED_VIDEOS: 'related',
+  SHARE: 'share',
+  SRC: 'src',
+  VIDEO_THUMBNAILS: 'thumbnails',
+  XDR: 'xdr'
+}

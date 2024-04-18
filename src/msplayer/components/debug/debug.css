@@ -1,0 +1,59 @@
+.logPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 90%;
+  padding: 8px;
+  z-index: 1000000000;
+  /* border: solid 1px #cfcfcf; */
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .3);
+  color: white;
+  text-align: left;
+  backface-visibility: hidden;
+
+  .button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    background: rgba(255, 255, 255, .25);
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .select {
+    margin-right: 8px;
+  }
+
+  .winControls {
+    float: right;
+    text-align: right;
+
+    div {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .textArea {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin-top: 8px;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+
+    &.minimized {
+      height: 0;
+      min-height: 0;
+      margin-top: 0;
+    }
+  }
+}

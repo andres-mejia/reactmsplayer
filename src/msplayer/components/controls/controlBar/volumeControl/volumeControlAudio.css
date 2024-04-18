@@ -1,0 +1,51 @@
+@import "svg_inline/list";
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.volumeBarContainer{
+  height: 6px;
+  width: 90px;
+  display: flex;
+  align-self: center;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+:global .x-small {
+  :local .volumeBarContainer{
+    width: 67px;
+  }
+}
+
+:global .xx-small {
+  :local .volumeBarContainer{
+    width: 67px;
+  }
+}
+
+.volumeBarBck {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.volumeBarValueContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.volumeBarValue {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  cursor: pointer;
+}

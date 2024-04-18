@@ -1,0 +1,61 @@
+{
+  "name": "reactmsplayer",
+  "version": "2.2.1",
+  "description": "React Mediaset Isomorphic Player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack/webpack.config.js",
+    "demo": "nodemon demo/index.js",
+    "sonarqube": "sonar-scanner"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.tele5.int:ReactMSPlayer"
+  },
+  "author": "CONECTA 5 TELECINCO, S.A.U.",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "classnames": "2.2.5",
+    "copy-webpack-plugin": "4.3.0",
+    "css-loader": "0.28.7",
+    "express": "4.16.2",
+    "express-react-views": "0.10.4",
+    "extract-text-webpack-plugin": "3.0.2",
+    "husky": "^8.0.3",
+    "immutable": "4.0.0-rc.9",
+    "isomorphic-fetch": "2.2.1",
+    "postcss": "5.2.5",
+    "postcss-clean": "1.0.2",
+    "postcss-cssnext": "2.8.0",
+    "postcss-import": "11.0.0",
+    "postcss-inline-svg": "3.0.0",
+    "postcss-loader": "1.1.1",
+    "postcss-nested": "1.0.0",
+    "postcss-nesting": "2.3.1",
+    "postcss-partial-import": "2.1.0",
+    "postcss-reporter": "2.0.0",
+    "postcss-svgo": "2.1.6",
+    "react": "16.6.0",
+    "react-addons-css-transition-group": "15.6.2",
+    "react-dom": "16.6.0",
+    "sonar-scanner": "3.1.0",
+    "style-loader": "0.19.1",
+    "webpack": "3.10.0"
+  },
+  "dependencies": {
+    "lodash": "4.17.11",
+    "screenfull": "4.0.0",
+    "subtitle": "3.0.0",
+    "ua-parser-js": "^1.0.36"
+  }
+}

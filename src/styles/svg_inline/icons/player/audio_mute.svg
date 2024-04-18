@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="speaker-filled-audio-tool" transform="translate(0.000000, 1.000000)" fill="#FFFFFF">
+            <g id="Capa_1">
+                <path d="M11.3735499,18.1355498 C11.2258314,18.2100131 11.0675432,18.2460082 10.9102862,18.2460082 C10.6612529,18.2460082 10.4145398,18.1547838 10.2152617,17.9786548 L4.26063418,12.7195129 L1.08919825,12.7195129 C0.487754576,12.7200624 0,12.1999185 0,11.5588747 L0,6.93363251 C0,6.29231395 0.487754576,5.77244475 1.08919825,5.77244475 L4.26089198,5.77244475 L10.2155195,0.513302871 C10.540861,0.225891042 10.9920082,0.164616819 11.3738077,0.356957431 C11.7556071,0.547924182 12,0.957334913 12,1.40741195 L11.9997422,17.0850952 C11.9997422,17.5354471 11.7556071,17.944583 11.3735499,18.1355498 Z" id="Shape"></path>
+                <g id="Group" transform="translate(14.000000, 4.000000)">
+                    <rect id="Rectangle-4" transform="translate(5.000000, 5.000000) rotate(45.000000) translate(-5.000000, -5.000000) " x="4" y="0" width="2" height="10" rx="1"></rect>
+                    <rect id="Rectangle-4" transform="translate(5.000000, 5.000000) scale(-1, 1) rotate(45.000000) translate(-5.000000, -5.000000) " x="4" y="2.27373675e-13" width="2" height="10" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

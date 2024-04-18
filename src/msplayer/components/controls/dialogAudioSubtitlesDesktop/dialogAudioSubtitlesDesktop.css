@@ -1,0 +1,846 @@
+@import "svg_inline/list";
+
+.container {
+  color: white;
+}
+
+.menu,
+.menu_chat,
+.menu_close,
+.menu_chat_close,
+.menu_ambos,
+.menu_ambos_chat,
+.menu_ambos_close,
+.menu_ambos_chat_close {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  margin: 20px 0 0;
+  padding: 14px 39px 23px 40px;
+  background-color: black;
+  border-radius: 6px;
+  height: fit-content;
+  z-index: 11037;
+  display: flex;
+  width: 366px;
+}
+
+.menu:before,
+.menu_chat:before,
+.menu_close:before,
+.menu_chat_close:before,
+.menu_ambos:before,
+.menu_ambos_chat:before,
+.menu_ambos_close:before,
+.menu_ambos_chat_close:before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  right: 15px;
+  border-bottom: 28px solid black;
+  border-bottom-color: black;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+}
+
+.menu_subtitulo {
+  z-index: 11020;
+  width: 140px;
+}
+
+.menu_audio {
+  z-index: 11020;
+  width: 140px;
+}
+
+.container_subtitleText {
+  width: 136px;
+  height: 52px;
+  padding-left: 8px;
+}
+
+.title_subtitle {
+  width: 126px;
+  height: 32px;
+  flex-grow: 0;
+  font-family: Flama-Basic;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container_audioText {
+  width: 81px;
+  height: 52px;
+  padding-left: 8px;
+}
+
+.title_audio {
+  width: 71px;
+  height: 32px;
+  flex-grow: 0;
+  font-family: Flama-Basic;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #7e7e7e;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.selected {
+    color: #fff;
+
+    .check {
+      visibility: visible;
+    }
+  }
+}
+
+.label {
+  white-space: nowrap;
+  font-family: Flama-Basic;
+}
+
+.check {
+  visibility: hidden;
+  width: 25px;
+  height: 20px;
+  background-image: svg-inline(player_icon_check);
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+:global .large {
+  :local .menu{
+    top: 58px;
+    right: 28px;
+    padding: 14px 38px 16px 35px;
+    width: 210px;
+  }
+
+  :local .menu:before {
+    top: -14px;
+    right: 2px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+  }
+
+  :local .menu_chat{
+    top: 58px;
+    right: 228px;
+    padding: 14px 38px 16px 35px;
+    width: 210px;
+  }
+
+  :local .menu_chat:before {
+    top: -13px;
+    right: 5px;
+  }
+
+  :local .menu_close{
+    top: 60px;
+    right: 228px;
+    padding: 14px 38px 16px 35px;
+    width: 210px;
+  }
+
+  :local .menu_close:before {
+    top: -18px;
+    right: 5px;
+  }
+
+  :local .menu_chat_close{
+    top: 58px;
+    right: 28px;
+    padding: 14px 38px 16px 35px;
+    width: 210px;
+  }
+
+  :local .menu_chat_close:before {
+    top: -14px;
+    right: 2px;
+  }
+
+  :local .menu_ambos {
+    width: 320px;
+    right: 30px;
+    top: 55px;
+    padding: 14px 20px 23px 20px;
+  }
+
+  :local .menu_ambos:before {
+    right: 4px;
+  }
+
+  :local .menu_ambos_chat {
+    width: 320px;
+    right: 228px;
+    top: 54px;
+    padding: 14px 20px 23px 20px;
+  }
+
+  :local .menu_ambos_chat:before {
+    top: -13px;
+    right: 5px;
+  }
+
+  :local .menu_ambos_close {
+    width: 320px;
+    right: 87px;
+    top: 58px;
+    padding: 14px 20px 23px 20px;
+  }
+
+  :local .menu_ambos_close:before {
+    top: -20px;
+    right: 4px;
+  }
+
+  :local .menu_ambos_chat_close {
+    width: 320px;
+    right: 277px;
+    top: 54px;
+    padding: 14px 20px 23px 20px;
+  }
+
+  :local .menu_ambos_chat_close:before {
+    top: -13px;
+    right: 5px;
+  }
+  
+  :local .container_subtitleText {
+    width: 136px;
+    height: 52px;
+    padding-left: 8px;
+  }
+
+  :local .container_audioText {
+    width: 81px;
+    height: 52px;
+    padding-left: 8px;
+  }
+
+  :local .title_subtitle {
+    width: 126px;
+    font-size: 28px;
+    height: 32px;
+  }
+
+  :local .title_audio {
+    width: 71px;
+    font-size: 28px;
+    height: 32px;
+  }
+
+  :local .item{
+    justify-content: normal;
+    width: 148px;
+  }
+
+  :local .check{
+    margin-left: 10px;
+  }
+
+}
+
+:global .medium {
+  :local .menu {
+    top: 55px;
+    right: 28px;
+    padding: 14px 20px 16px 32px;
+    width: 210px;
+  }
+
+  :local .menu:before {
+    top: -15px;
+    right: 3px;
+  }
+
+  :local .menu_chat {
+    top: 60px;
+    right: 226px;
+    padding: 14px 20px 16px 32px;
+    width: 210px;
+  }
+
+  :local .menu_chat:before {
+    top: -20px;
+    right: 4px;
+  }
+
+  :local .menu_close {
+    top: 62px;
+    right: 82px;
+    padding: 14px 20px 16px 32px;
+    width: 210px;
+  }
+
+  :local .menu_close:before {
+    top: -21px;
+    right: 4px;
+  }
+
+  :local .menu_chat_close {
+    top: 55px;
+    right: 28px;
+    padding: 14px 20px 16px 32px;
+    width: 210px;
+  }
+
+  :local .menu_chat_close:before {
+    top: -15px;
+    right: 3px;
+  }
+
+  :local .menu_ambos{
+    width: 310px;
+    right: 28px;
+    top: 56px;
+    padding: 14px 20px 18px 20px
+  }
+
+  :local .menu_ambos:before {
+    top: -18px;
+    right: 3px;
+  }
+
+  :local .menu_ambos_chat {
+    width: 310px;
+    right: 228px;
+    top: 58px;
+    padding: 14px 20px 18px 20px
+  }
+
+  :local .menu_ambos_chat:before {
+    top: -18px;
+    right: 2px;
+  }
+
+  :local .menu_ambos_close {
+    width: 310px;
+    right: 82px;
+    top: 58px;
+    padding: 14px 20px 18px 20px
+  }
+
+  :local .menu_ambos_close:before {
+    top: -18px;
+    right: 3px;
+  }
+
+  :local .menu_ambos_chat_close {
+    width: 310px;
+    right: 277px;
+    top: 58px;
+    padding: 14px 20px 18px 20px;
+  }
+
+  :local .menu_ambos_chat_close:before {
+    top: -18px;
+    right: 4px;
+  }
+
+  :local .container_subtitleText {
+    width: 130px;
+    height: 50px;
+    padding-left: 8px;
+  }
+
+  :local .container_audioText {
+    width: 80px;
+    height: 50px;
+    padding-left: 8px;
+  }
+
+  :local .title_subtitle {
+    width: 126px;
+    font-size: 26px;
+  }
+
+  :local .title_audio {
+    width: 71px;
+    font-size: 26px;
+  }
+
+  :local .item{
+    justify-content: normal;
+    width: 146px;
+  }
+
+  :local .check{
+    margin-left: 8px;
+  }
+
+}
+
+:global .small {
+  :local .menu {
+    top: 38px;
+    width: 156px;
+    right: 20px;
+    padding: 11px 18px 16px 20px;
+  }
+
+  :local .menu:before {
+    top: -11px;
+    right: 1px;
+  }
+
+  :local .menu_chat {
+    top: 52px;
+    width: 156px;
+    right: 207px;
+    padding: 11px 18px 16px 20px;
+  }
+
+  :local .menu_chat:before {
+    top: -18px;
+    right: 104px;
+  }
+
+  :local .menu_close {
+    top: 49px;
+    width: 156px;
+    right: 60px;
+    padding: 11px 18px 16px 20px;
+  }
+
+  :local .menu_close:before {
+    top: -20px;
+    right: 2px;
+  }
+
+  :local .menu_chat_close { 
+    top: 38px;
+    width: 156px;
+    right: 20px;
+    padding: 11px 18px 16px 20px;
+  }
+
+  :local .menu_chat_close:before {
+    top: -11px;
+    right: 1px;
+  }
+
+  :local .menu_ambos{
+    width: 280px;
+    right: 20px;
+    top: 46px;
+    padding: 14px 20px 23px 24px;
+  }
+
+  :local .menu_ambos:before{
+    top: -22px;
+    right: 2px;
+  }
+
+  :local .menu_ambos_chat {
+    width: 280px;
+    top: 54px;
+    right: 104px;
+    padding: 14px 20px 23px 24px;
+  }
+
+  :local .menu_ambos_chat:before {
+    top: -18px;
+    right: 104px;
+  }
+
+  :local .menu_ambos_close {
+    width: 280px;
+    top: 48px;
+    right: 60px;
+    padding: 14px 20px 23px 24px;
+  }
+
+  :local .menu_ambos_close:before {
+    top: -19px;
+    right: 1px;
+  }
+
+  :local .menu_ambos_chat_close {
+    width: 280px;
+    right: 104px;
+    top: 48px;
+    padding: 14px 20px 23px 24px;
+  }
+
+  :local .menu_ambos_chat_close:before {
+    top: -19px;
+    right: 140px;
+  }
+
+  :local .menu_subtitulo {
+    width: 120px;
+  }
+
+  :local .menu_audio {
+    width: 120px;
+  }
+
+  :local .container_subtitleText {
+    width: 116px;
+    height: 45px;
+    padding-left: 8px;
+  }
+
+  :local .container_audioText {
+    width: 78px;
+    height: 45px;
+    padding: 0;
+  }
+
+  :local .title_subtitle {
+    width: 116px;
+    height: 29px;
+    font-size: 22px;
+  }
+
+  :local .title_audio {
+    width: 116px;
+    height: 29px;
+    font-size: 22px;
+  }
+
+  :local .item{
+    justify-content: normal;
+    font-size: 16px; 
+    width: 136px;
+  }
+
+  :local .check {
+    width: 23px;
+    height: 18px;
+    background-position-y: bottom;
+    margin-left: 8px;
+  }
+}
+
+:global .x-small {
+  :local .menu { 
+    width: 125px;
+    right: 12px;
+    padding: 12px 15px 12px 12px;
+    top: 18px;
+  }
+
+  :local .menu:before {
+    top: -11px;
+    right: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_chat {
+    width: 125px;
+    top: 54px;
+    right: 194px;
+    padding: 12px 15px 12px 12px;
+  }
+
+  :local .menu_chat:before {
+    top: -18px;
+    right: 104px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_close {
+    width: 125px;
+    top: 27px;
+    right: 39px;
+    padding: 12px 15px 12px 12px;
+  }
+
+  :local .menu_close:before {
+    top: -20px;
+    right: 1px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_chat_close { 
+    width: 125px;
+    right: 12px;
+    padding: 12px 15px 12px 12px;
+    top: 18px;
+  }
+
+  :local .menu_chat_close:before {
+    top: -11px;
+    right: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_ambos {
+    width: 220px;
+    right: 12px;
+    top: 26px;
+    padding: 14px 14px 14px 14px;
+  }
+
+  :local .menu_ambos:before {
+    top: -20px;
+    right: -2px;
+  }
+
+  :local .menu_ambos_chat {
+    width: 220px;
+    top: 54px;
+    right: 48px;
+    padding: 14px 14px 14px 14px;
+  }
+
+  :local .menu_ambos_chat:before {
+    top: -17px;
+    right: 146px;
+  }
+
+  :local .menu_ambos_close {
+    width: 220px;
+    top: 27px;
+    right: 39px;
+    padding: 14px 14px 14px 14px;
+  }
+
+  :local .menu_ambos_close:before {
+    top: -20px;
+    right: -2px;
+  }
+
+  :local .menu_ambos_chat_close {
+    width: 220px;
+    right: 48px;
+    top: 29px;
+    padding: 14px 14px 14px 14px;
+  }
+
+  :local .menu_ambos_chat_close:before {
+    top: -20px;
+    right: 145px;
+  }
+
+  :local .menu_subtitulo {
+    width: 100px;
+  }
+
+  :local .menu_audio {
+    width: 100px;
+  }
+
+  :local .container_subtitleText {
+    width: 100px;
+    height: 38px;
+    padding-left: 8px;
+  }
+
+  :local .container_audioText {
+    width: 65px;
+    height: 38px;
+    padding: 0;
+  }
+
+  :local .title_subtitle {
+    width: 110px;
+    height: 23px;
+    font-size: 20px;
+  }
+
+  :local .title_audio {
+    width: 90px;
+    height: 23px;
+    font-size: 20px;
+  }
+
+  :local .item{
+    justify-content: normal;
+    font-size: 13px;
+    width: 110px;
+  }
+
+  :local .check {
+    width: 22px;
+    height: 16px;
+    background-size: 16px;
+    margin-left: 6px;
+  }
+}
+
+:global .xx-small {
+  :local .menu{
+    width: 125px;
+    right: 8px;
+    padding: 12px 15px 12px 12px;
+    top: 15px;
+  }
+
+  :local .menu:before {
+    top: -12px;
+    right: -1px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_chat {
+    width: 125px;
+    right: 67px;
+    top: 52px;
+    padding: 12px 15px 12px 12px;
+  }
+
+  :local .menu_chat:before {
+    top: -18px;
+    right: 104px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_close {
+    width: 125px;
+    right: 33px;
+    top: 20px;
+    padding: 12px 15px 12px 12px;
+  }
+
+  :local .menu_close:before {
+    top: -19px;
+    right: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_chat_close{
+    width: 125px;
+    right: 8px;
+    padding: 12px 15px 12px 12px;
+    top: 15px;
+  }
+
+  :local .menu_chat_close:before {
+    top: -12px;
+    right: -1px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  :local .menu_ambos{
+    width: 210px;
+    right: 8px;
+    top: 22px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  :local .menu_ambos:before {
+    top: -22px;
+    right: -4px;
+  }
+
+  :local .menu_ambos_chat {
+    width: 210px;
+    top: 52px;
+    right: 38px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  :local .menu_ambos_chat:before {
+    top: -18px;
+    right: 128px;
+  }
+
+  :local .menu_ambos_close {
+    width: 210px;
+    top: 20px;
+    right: 33px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  :local .menu_ambos_close:before {
+    top: -20px;
+    right: -3px;
+  }
+
+  :local .menu_ambos_chat_close {
+    width: 210px;
+    right: 38px;
+    top: 24px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  :local .menu_ambos_chat_close:before {
+    top: -22px;
+    right: 120px;
+  }
+
+  :local .menu_subtitulo {
+    width: 90px;
+  }
+
+  :local .menu_audio {
+    width: 90px;
+  }
+
+  :local .container_subtitleText {
+    width: 94px;
+    height: 34px;
+  }
+
+  :local .container_audioText {
+    width: 65px;
+    height: 34px;
+    padding: 0;
+  }
+
+  :local .title_subtitle {
+    width: 110px;
+    height: 23px;
+    font-size: 18px;
+  }
+
+  :local .title_audio {
+    width: 90px;
+    height: 23px;
+    font-size: 18px;
+  }
+
+  :local .item{
+    justify-content: normal;
+    font-size: 12px;
+    width: 108px;
+  }
+
+  :local .check {
+    width: 22px;
+    height: 16px;
+    background-size: 13px;
+    margin-left: 6px;
+  }
+}
+
+@media not all and (hover: none) {
+  .item:hover {
+    color: white;
+  }
+}
